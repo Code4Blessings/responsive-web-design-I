@@ -167,21 +167,31 @@ h5 {
         margin: 30px;
         flex-direction: column;
         width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 
-    .logo {
+     .logo {
         display: block;
         width: 80%;
         height: auto;
+    } 
+
+    .header-section {
+        width: 100%;
     }
 
     .header-section .container {
-        width: 90%;
-        height: 400px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        width: 100%;
+        height: 300px;
+        padding-right: 50px;
+    }
+
+    .header-section h1 {
+        margin-left: 100px;
+        padding: 30px 220px;
+        width: 180%;
+        height: 250px;
     }
 
     a {
@@ -189,7 +199,6 @@ h5 {
         width: 100%;
         padding: 50%;
         border: 1px solid gray;
-        box-sizing: border-box;
     }
 
     .header-section #code-globe {
@@ -197,13 +206,13 @@ h5 {
     }
 
     .header-section .home-button {
-        flex-direction: row;
         background-color: white;
         color: black;
         text-align: center;
-        padding: 50%px;
+        margin: 200px;
+        padding: 30px;
         height: 70px;
-        width: 200px;
+        width: 50%;
         border: 2px solid black;
         border-radius: 20px;
     }
@@ -274,12 +283,27 @@ h5 {
 /* Home Page */
  
 nav {
-    margin: 15px auto;
-    padding: 20px;
+    margin: 20px 0;
+    padding: 20px 0;
     display: flex;
-    justify-content: center;
-    color: white;
-    background: #FFF;
+    justify-content: space-evenly;
+}
+/* Tablet-View */
+@media (max-width: 800px) {
+    .header-section .logo {
+        margin: 20px 200px;
+        width: 50%;
+        height: 80px;
+    }
+
+    .header-section nav {
+        width: 100%;
+        display: flex;
+    }
+    .header-section #code-globe {
+        display: none;
+    }
+
 }
 
 a {
@@ -289,6 +313,13 @@ a {
     font-size: 20px;
 }
 
+/* Tablet-View */
+@media (max-width: 800px) {
+    .header-section a {
+        width: 100%;
+    }
+}
+
 a:hover {
     color: red;
 }
@@ -296,14 +327,14 @@ a:hover {
 h1 {
     font-size: 70px;
 }
-
-.container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 1250px;
-    height: 500px;
-
+/* Tablet-View */
+@media (max-width: 800px) {
+    h1 {
+        margin: 0;
+        padding: 30px 220px;
+        width: 90%;
+        height: 250px;
+    }
 }
 
 .home-button {
@@ -312,6 +343,28 @@ h1 {
     margin: 30px 300px;
     font-size: 15px;
 }
+/* Tablet-View */
+@media (max-width: 800px) {
+    .home-button {
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1250px;
+    height: 500px;
+}
+/* Tablet-View */
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+        height: 300px;
+    }
+}
 
 .container2 {
     height: 200px;
@@ -319,6 +372,14 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+/* Tablet-View */
+@media (max-width: 800px) {
+    .container2 {
+         width: 100%;
+         height: 200px;
+         padding: 20px;
+    }
 }
 
 .description-section {
@@ -330,6 +391,20 @@ h1 {
 .middle-img {
     margin: 15px 200px;
 }
+/* Tablet View */
+@media (max-width: 800px) {
+    #features .middle-img {
+        margin-top: 30px;
+        margin-left: 20px;
+        display: block;
+        width: 90%;
+        height: auto;
+    }
+
+    #features p {
+        padding: 20px;
+    }
+}
 
 .container3 {
     height: 350px;
@@ -337,6 +412,14 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+/* Tablet View */ 
+@media (max-width: 800px) {
+    #features .container3 {
+        width: 100%;
+        padding-bottom: 40px;
+    }
 }
 
 .content-section {
@@ -354,6 +437,15 @@ address {
 footer {
     font-size: 20px;
     margin: 20px 500px;
+}
+
+/* Tablet View */
+@media (max-width: 800px) {
+    #bottom-section footer {
+        display: inline-block;
+        margin-left: 50px;
+        width: 90%;
+    }
 }
 
  
